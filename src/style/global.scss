@@ -1,0 +1,25 @@
+:root{
+    --color-primary: #FF577F;
+    --color-primary-focus: #FF427F;
+    --color-primary-negative: #59323F;
+
+    --grey-4: #121214;
+    --grey-3: #212529;
+    --grey-2: #343B41;
+    --grey-1: #868E96;
+    --grey-0: #F8F9FA;
+
+    --font: "Inter", sans-serif;
+}
+
+body{
+    max-width: 2000px;
+    max-height: 2000px;
+
+    font-family: var(--font);
+    background: var(--grey-4);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

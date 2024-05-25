@@ -1,0 +1,153 @@
+.RegisterContainer {
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
+
+    color: var(--grey-0);
+    background: var(--grey-4);
+
+    .RegisterSubContainer {
+        max-width: 370px;
+        width: 100%;
+
+        margin: 50px;
+        border-radius: 3px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 20px;
+
+        .RegisterTitle{
+            width: 100%;
+
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+
+            .Link{
+                width: 67px;
+                height: 40px;
+
+                background: var(--grey-3);
+                color: var(--grey-0);
+                border-radius: 3px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                font-family: var(--font);
+                font-size: .75rem;
+
+                &:hover{
+                    background: var(--grey-2);
+                }
+            }
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            gap: 20px;
+
+            background: var(--grey-3);
+
+            width: 100%;
+            height: 100%;
+
+            padding: 50px 20px;
+
+            button{
+                width: 324px;
+                height: 48px;
+                border-radius: 5px;
+
+                background: var(--color-primary);
+                color: var(--grey-0);
+
+                font-size: 1rem;
+
+                &:hover{
+                    background: var(--color-primary-focus);
+                }
+            }
+            .FormTitle{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+                p{
+                    color: var(--grey-1);
+                }
+            }
+
+            .InputContainer{
+                max-width: 330px;
+                width: 100%;
+                height: 106px;
+                gap: 10px;
+
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                label{
+                    font-size: 12px;
+                }
+
+                input, select{
+                    width: 100%;
+                    height: 48px;
+
+                    background: var(--grey-2);
+                    border-radius: 2px;
+                    padding: 0 20px;
+
+                    &:focus{
+                        color: var(--grey-0);
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media(max-width: 620px) {
+    .RegisterContainer {
+
+        .RegisterSubContainer {
+            width: 292px;
+
+            form{
+
+                button{
+                    width: 259px;
+                    height: 39px;
+
+                    padding: 10px;
+                }
+                .Subscribe{
+                    .Link{
+                        width: 259px;
+                        height: 39px;
+                    }
+                }
+            }
+            .InputContainer {
+                width: 260px;
+                padding: 0 10px;
+            }
+        }
+    }
+}

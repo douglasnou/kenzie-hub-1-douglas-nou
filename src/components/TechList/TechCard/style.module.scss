@@ -1,0 +1,60 @@
+.Card{
+    max-width: 723px;
+    width: 100%;
+    height: 49px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px 20px;
+    background: var(--grey-4);
+    border-radius: 3px;
+
+    .TitleCard{
+        width: 90%;
+        color: var(--grey-0);
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        p{
+            color: var(--grey-1);
+        }
+    }
+
+    .ActionsCard{
+        width: 6%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        button{
+            color: var(--grey-0);
+        }
+    }
+}
+
+@media(max-width: 620px){
+    .Card{
+        max-width: 275px;
+        height: 76px;
+
+        justify-content: space-between;
+        padding: 0 30px;
+        .TitleCard{
+            flex-direction: column;
+            justify-content: space-between;
+            width: 50%;
+            height: 40px;
+        }
+        .ActionCard{
+            width: 50%;
+            height: 50px;
+            align-items: flex-end;
+        }
+    }
+}

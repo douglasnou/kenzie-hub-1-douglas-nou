@@ -1,0 +1,30 @@
+%title{
+    font-family: var(--font);
+    font-weight: bold;
+}
+
+.title1{
+    @extend %title;
+    font-size: clamp(1rem, 5vw, 1.125rem);
+}
+
+.title2{
+    @extend %title;
+    font-size: clamp(.875rem, 5vw, 1rem);
+}
+
+.headline{
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: .75rem;
+}
+
+.headline.bold{
+    font-weight: bold;
+}
+
+.paragraph{
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: clamp(.875rem, 5vw, 1rem);
+}
