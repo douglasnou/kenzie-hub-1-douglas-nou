@@ -10,25 +10,25 @@ export const UserProvider = ({ children }) => {
     const [techList, setTechList] = useState();
     const navigate = useNavigate();
     const [loading, setLoading] = useState(false);
-    const notifySuccessSub = ()=> toast.success("Cadastro realizado com sucesso!",{
+    const notifySuccessSub = () => toast.success("Cadastro realizado com sucesso!", {
         style: {
-          background: '#333',
-          color: '#fff',
+            background: '#333',
+            color: '#fff',
         },
-      });
-    const notifySuccessLogin = ()=> toast.success("Você está logado!",{
+    });
+    const notifySuccessLogin = () => toast.success("Você está logado!", {
         style: {
-          background: '#333',
-          color: '#fff',
+            background: '#333',
+            color: '#fff',
         },
-      });
-    const notifySuccessLogout = ()=> toast.success("Você saiu!",{
+    });
+    const notifySuccessLogout = () => toast.success("Você saiu!", {
         style: {
-          background: '#333',
-          color: '#fff',
+            background: '#333',
+            color: '#fff',
         },
-      });
-    const notifyError = ()=> toast.error("Ops! Algo está errado");
+    });
+    const notifyError = () => toast.error("Ops! Algo está errado");
 
     useEffect(() => {
         const userId = localStorage.getItem("@USERID");
@@ -52,7 +52,7 @@ export const UserProvider = ({ children }) => {
                 setLoading(false);
             }
         };
-        if(token && userId){
+        if (token && userId) {
             autoLogin();
         }
     }, [])
@@ -79,6 +79,7 @@ export const UserProvider = ({ children }) => {
             notifyError();
         }
     }
+    
 
     const userLogout = async () => {
         setUser(null);

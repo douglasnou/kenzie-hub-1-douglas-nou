@@ -7,7 +7,7 @@
     align-items: center;
 
     margin: 0 auto;
-
+    
     color: var(--grey-0);
     background: var(--grey-4);
 
@@ -135,5 +135,11 @@
                 padding: 0 10px;
             }
         }
+    }
+}
+
+@media(min-width: 1500px){
+    .LoginContainer{
+        margin: 20% auto;
     }
 }
